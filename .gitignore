@@ -2,5 +2,7 @@
 *.iws
 *.iml
 */node_modules
-*/felix
+*/felix/doc
+*/felix/bundle
+*/felix/felix-cache
 */target
