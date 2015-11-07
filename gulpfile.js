@@ -24,6 +24,11 @@ gulp.task('default', function () {
 	console.log(params);
 });
 
+gulp.task('make', function () {
+	return gulp.src('')
+		.pipe(shell('mvn package -DskipTests=true', {quiet: params.silent}));
+});
+
 gulp.task('felix:up', ['felix:clean-cache'], shell.task([template('java -jar bin/felix.jar')], {
 	cwd: 'felix'
 }));
