@@ -17,7 +17,7 @@ Clone the repo and you can start develop your first OSGi bundle instantly withou
 * gulp support
 * Groovy support within your bundles
 
-##Prerequists
+##Prerequisits
 * JDK >= 1.7
 * Maven 3 - https://maven.apache.org/
 * npm - https://www.npmjs.com/
