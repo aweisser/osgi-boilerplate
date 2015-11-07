@@ -1,8 +1,8 @@
 *.ipr
 *.iws
 *.iml
-*/node_modules
-*/felix/doc
-*/felix/bundle
-*/felix/felix-cache
 */target
+/node_modules
+/felix/bundle
+/felix/doc
+/felix/felix-cache
