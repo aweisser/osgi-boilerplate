@@ -23,20 +23,19 @@ Clone the repo and you can start develop your first OSGi bundle instantly withou
 * npm - https://www.npmjs.com/
 
 ##Installation
-    execute "npm install"
+    npm install
     gulp make
 
 ##Starting the OSGi container
     gulp felix:up
-
+    
+##Open the Web-Management Console:
+    http://localhost:8080/system/console (admin/admin)
 
 ## Appendix
 
 ###Usefull debug commands:
     inspect cap service
-
-###Web-Management Console:
-    http://localhost:8080/system/console
 
 ###Bundles
     http://repo1.maven.org/maven2/org/apache/felix/
