@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.aw.osgi</groupId>
+        <artifactId>_felix_</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>de.aw.osgi</groupId>
+    <artifactId>mwa.greeter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+    <description>The bundle provides a greeter service.</description>
+
+
+    <dependencies>
+        <!-- Place your module specific dependencies here.-->
+        <!-- BUT REMEMBER: Focus on high cohesion and low coupling!!! -->
+        <!-- Every dependency will be automatically placed in the osgi runtim during package phase. -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.5.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Bundle-Version>${project.version}</Bundle-Version>
+                        <Export-Package>de.aw.osgi.${project.artifactId}</Export-Package>
+                        <Private-Package>de.aw.osgi.${project.artifactId}.intern</Private-Package>
+                        <Bundle-Activator>de.aw.osgi.${project.artifactId}.Activator</Bundle-Activator>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
